@@ -1,3 +1,17 @@
+cp ./application/config/config.php.example ./application/config/config.php
+cp ./application/config/database.php.example ./application/config/database.php
+
+vim ./application/config/config.php
+$config['base_url'] = "https://dave.com/";
+$config['encryption_key'] = 'breasts';
+:wq
+
+vim ./application/config/database.php
+	'username' => 'loopnova',
+	'password' => 'shame',
+	'database' => 'home',
+:wq
+
 crontabs
 #insert magic time (0, 1 or 2) into DB
 11 01 * * * elinks --dump https://domain.com/daemon/daniel/magicHappeningGenerator
