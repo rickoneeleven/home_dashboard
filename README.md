@@ -2,7 +2,7 @@ cp ./application/config/config.php.example ./application/config/config.php
 cp ./application/config/database.php.example ./application/config/database.php
 
 vim ./application/config/config.php
-$config['base_url'] = "https://dave.com/";
+$config['base_url'] = "https://domain.com/";
 $config['encryption_key'] = 'breasts';
 :wq
 
