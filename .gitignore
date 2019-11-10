@@ -17,5 +17,5 @@ application/logs/*
 /vendor/
 
 #ryan's added bag of goodness
-config.php
-database.php
+/application/config/config.php
+/application/config/database.php
