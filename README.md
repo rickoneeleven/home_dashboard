@@ -1,3 +1,6 @@
++++++++++INTRO
+codeigniter 3.1.3 project
+
 cp ./application/config/config.php.example ./application/config/config.php
 cp ./application/config/database.php.example ./application/config/database.php
 
@@ -11,7 +14,6 @@ vim ./application/config/database.php
 	'password' => 'shame',
 	'database' => 'home',
 :wq
-
 ------------------------------------------------------------------------
 database
 mysqladmin -u root -p create home
@@ -25,3 +27,8 @@ crontabs
 */2 * * * * elinks --dump https://domain.com/daemon/getdark/insertdaily > /dev/null 2>&1
 ------------------------------------------------------------------------
 without weather data for yesterday, page will show errors. so once database is up and running and crontabs are good to go, give it a day before the page loads without errors.
+------------------------------------------------------------------------
+
+
++++++++++TO DO
+-create a DB that hold items, for example the basic tasks from here: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf - then on the homepage show a shortcut/quote per day to help memorise
