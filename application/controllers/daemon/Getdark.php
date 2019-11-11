@@ -6,11 +6,11 @@ class Getdark extends CI_Controller {
     public function insertDaily() {
         if(date('D') === "Sat" || date('D') === "Sun") {
             //billinge
-            $requesturl='https://api.darksky.net/forecast/8c764e296e099d8c88870fc3d0abc1e2/53.493894,-2.7152488?units=si';
+            $requesturl='https://api.darksky.net/forecast/'.darksky_api.'/53.493894,-2.7152488?units=si';
             $site = "Billinge";
         } else {
             //work
-            $requesturl='https://api.darksky.net/forecast/8c764e296e099d8c88870fc3d0abc1e2/53.537135,-2.791862?units=si';
+            $requesturl='https://api.darksky.net/forecast/'.darksky_api.'/53.537135,-2.791862?units=si';
             $site = "Skelmersdale";
         }
 

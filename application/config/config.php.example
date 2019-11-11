@@ -23,10 +23,34 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = "";
+$config['base_url'] = "*required";
 
 #below was causing undefined HTTP_HOST phpunit test warnings
 #$config['base_url'] = "https://".$_SERVER['HTTP_HOST']."/";
+
+/*
+|--------------------------------------------------------------------------
+| Darksky API Key
+|--------------------------------------------------------------------------
+|
+| Just thought I'd plop this here as this config files does not go up to git
+|
+|
+*/
+define("darksky_api", "*required");
+
+/*
+|--------------------------------------------------------------------------
+| Encryption Key
+|--------------------------------------------------------------------------
+|
+| If you use the Encryption class, you must set an encryption key.
+| See the user guide for more info.
+|
+| https://codeigniter.com/user_guide/libraries/encryption.html
+|
+*/
+$config['encryption_key'] = '*required';
 
 /*
 |--------------------------------------------------------------------------
@@ -315,19 +339,6 @@ $config['cache_path'] = '';
 |
 */
 $config['cache_query_string'] = FALSE;
-
-/*
-|--------------------------------------------------------------------------
-| Encryption Key
-|--------------------------------------------------------------------------
-|
-| If you use the Encryption class, you must set an encryption key.
-| See the user guide for more info.
-|
-| https://codeigniter.com/user_guide/libraries/encryption.html
-|
-*/
-$config['encryption_key'] = '';
 
 /*
 |--------------------------------------------------------------------------
