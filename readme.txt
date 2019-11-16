@@ -17,7 +17,7 @@ vim ./application/config/database.php
 ------------------------------------------------------------------------
 database
 mysqladmin -u root -p create home
-mysql -u root -p mytestdatabase < database_structure.sql
+mysql -u root -p home < database_structure.sql
 ------------------------------------------------------------------------
 crontabs
 #insert magic time (0, 1 or 2) into DB
