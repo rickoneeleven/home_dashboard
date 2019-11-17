@@ -32,3 +32,5 @@ without weather data for yesterday, page will show errors. so once database is u
 
 +++++++++TO DO
 -create a DB that hold items, for example the basic tasks from here: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf - then on the homepage show a shortcut/quote per day to help memorise
+-home database is 200MB, need to write something to trim that down and then take a copy of the DB and restore it to home.test. AND THEN, uopdate home.test readme to include new cron to clean up database.
+-on home.test - Message: Undefined variable: themed_day
