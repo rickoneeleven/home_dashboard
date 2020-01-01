@@ -1,8 +1,10 @@
--- MySQL dump 10.13  Distrib 5.7.27, for Linux (x86_64)
+CREATE DATABASE  IF NOT EXISTS `home` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `home`;
+-- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
 --
--- Host: localhost    Database: home
+-- Host: 127.0.0.1    Database: home
 -- ------------------------------------------------------
--- Server version	5.7.27-0ubuntu0.18.04.1
+-- Server version	5.7.24
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -29,8 +31,17 @@ CREATE TABLE `darksky_daily` (
   `temperatureMax` tinyint(4) DEFAULT NULL,
   `temperatureMin` tinyint(4) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2658713 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `darksky_daily`
+--
+
+LOCK TABLES `darksky_daily` WRITE;
+/*!40000 ALTER TABLE `darksky_daily` DISABLE KEYS */;
+/*!40000 ALTER TABLE `darksky_daily` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `darksky_summary`
@@ -60,8 +71,17 @@ CREATE TABLE `darksky_summary` (
   `apparentTemp` varchar(7) DEFAULT NULL,
   `apparentTemp_coming` varchar(7) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=332367 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `darksky_summary`
+--
+
+LOCK TABLES `darksky_summary` WRITE;
+/*!40000 ALTER TABLE `darksky_summary` DISABLE KEYS */;
+/*!40000 ALTER TABLE `darksky_summary` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `other`
@@ -78,6 +98,16 @@ CREATE TABLE `other` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `other`
+--
+
+LOCK TABLES `other` WRITE;
+/*!40000 ALTER TABLE `other` DISABLE KEYS */;
+INSERT INTO `other` VALUES (1,'themed_day','0','2018-07-20 01:12:01'),(2,'magic_happens','0','2019-12-31 07:25:52'),(3,'upcoming_magic_manual','0','2019-12-06 01:11:01');
+/*!40000 ALTER TABLE `other` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -88,4 +118,4 @@ CREATE TABLE `other` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-11-09 15:37:05
+-- Dump completed on 2019-12-31 17:48:18
