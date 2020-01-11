@@ -13,6 +13,7 @@ class Daily_alert extends CI_Controller {
             'darkskyYesterday'          => $this->Sqlqu->getDarknetYesterday(),
         );
         $subjet = $data['darkskyDaily']['1']['min'] - $data['darkskyDaily']['0']['min'];
+        $subjet = sprintf("%+d",$subjet); //add plus sign to positive numbers
         //echo $subjet;
         //vdebug($data);
 
@@ -34,6 +35,7 @@ class Daily_alert extends CI_Controller {
             'darkskyYesterday'          => $this->Sqlqu->getDarknetYesterday(),
         );
         $subjet = $data['darkskyDaily']['0']['max'] - $data['darkskyYesterday']['max'];
+        $subjet = sprintf("%+d",$subjet); //add plus sign to positive numbers
         //echo $subjet;
         //vdebug($data);
 
