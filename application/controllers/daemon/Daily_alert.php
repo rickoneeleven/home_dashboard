@@ -21,7 +21,7 @@ class Daily_alert extends CI_Controller {
         $this->email->to('ryan@pinescore.com');
         $this->email->cc('michelle@pinescore.com');
 
-        $this->email->subject($data['darkskyDaily']['0']['max']." (".$subjet.")");
+        $this->email->subject($data['darkskyDaily']['1']['min']." (".$subjet.")");
 
         $this->email->send();
     }
