@@ -19,7 +19,7 @@ class Daily_alert extends CI_Controller {
 
         $this->email->from('home@loopnova.com', 'Night time email');
         $this->email->to('ryan@pinescore.com');
-        $this->email->cc('michelle@pinescore.com');
+        //$this->email->cc('michelle@pinescore.com');
 
         $this->email->subject($data['darkskyDaily']['1']['min']." (".$subjet.")");
 
@@ -42,7 +42,7 @@ class Daily_alert extends CI_Controller {
 
         $this->email->from('home@loopnova.com', 'Morning email');
         $this->email->to('ryan@pinescore.com');
-        $this->email->cc('michelle@pinescore.com');
+        //$this->email->cc('michelle@pinescore.com');
 
         $this->email->subject($data['darkskyDaily']['0']['max']." (".$subjet.")");
 
