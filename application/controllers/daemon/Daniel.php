@@ -62,6 +62,7 @@ class Daniel extends CI_Controller {
 
             $this->db->where('id', 2);
             $this->db->update('other', $update);
+            echo $update['value']." &nbsp&nbsp&nbsp ".'<a href="./magicHappeningGenerator">'.date("H:i:s")."</a>";
         }
     }
 
