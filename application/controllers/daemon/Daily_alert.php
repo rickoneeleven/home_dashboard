@@ -23,7 +23,7 @@ class Daily_alert extends CI_Controller {
 
         $this->email->subject($data['darkskyDaily']['1']['min']." (".$subjet.")");
 
-        $this->email->send();
+        vdebug($this->email->send());
     }
 
     public function email_day() {
