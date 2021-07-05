@@ -16,7 +16,7 @@
         <p>
             <span style="font-size:15px">
             <a href="https://pine.screenconnect.com/">screenconnect</a></br>
-            <a href="https://novascore.io:20111/mailbox/index.cgi?id=INBOX&xnavigation=1">email</a></br>
+            <a href="https://pinescore.com:20111/mailbox/index.cgi?id=INBOX&xnavigation=1">email</a></br>
             </span>
         </p>
         </span>

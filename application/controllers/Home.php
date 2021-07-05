@@ -14,7 +14,7 @@ class Home extends CI_Controller {
         if($otherTable->row('value') === '0') $themed_day = "&#x25BC;&#x25BC;";
         if($otherTable->row('value') === '1') $themed_day = "&#x25B2;&#x25B2;";
         if($otherTable->row('value') === '2') $themed_day = "&#x25C0;&#x25C0;";
-        $last_drank = new DateTime('2020-09-04');
+        $last_drank = new DateTime('2021-07-02');
         $today = new DateTime(date('Y-m-d'));
         $days_ago_last_drank = $last_drank->diff($today)->days;
         $data = array(
